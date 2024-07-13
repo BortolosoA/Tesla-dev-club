@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- VERSÃO DO HTML -->
+<html lang="pt-br"> <!-- TAG HTML E LINGUA DO SITE -->
+
+<head> <!-- CONFIGURAÇÕES DO SITE -->
+    <meta charset="UTF-8"> <!-- PADRÃO DE CARACTERES DO SITE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SITE COMPATÍVEL COM CELULAR E COMPUTADOR -->
+     <link rel="stylesheet" href="styles.css"> <!--IMPORTANDO MEU ARQUIVO CSS -->
+    <title>DevClub - Tesla</title> <!-- TITULO DO SITE -->
+</head>
+
+<body>
+    <img src="./assets/logo.png" alt="logo da tesla" class="logo">
+
+    <ul class="lista">
+        <!-- ITEM 1 -->
+        <li class="item">
+            <video src="./assets/model-y.mp4" muted loop autoplay></video>
+
+            <div class="info-carro">
+                <h1>Model Y</h1> <!-- TITULO -->
+                <p class="sub-titulo">Parcelar a partir de 499 dólares</p>
+            </div>
+
+            <div class="rodape">
+                <button onclick="show()">Comprar Agora</button>
+                <button class="test-drive" onclick="show()">Faça um Test-Drive</button>
+                <p class="texto-rodape">Não garantimos seu veículo imediatamente.Consultar estoque*</p>
+            </div>
+        </li>
+
+        <!-- ITEM 2 -->
+        <li class="item">
+            <img src="./assets/model-3.png" class="img-tesla" alt="imagem model 3">
+
+            <div class="info-carro">
+                <h1>Model 3</h1> <!-- TITULO -->
+                <p class="sub-titulo">Compre agora o seu Tesla</p>
+            </div>
+        </li>
+
+        <!-- ITEM 3 -->
+        <li class="item">
+            <img src="./assets/model-x.png" class="img-tesla" alt="imagem model x">
+
+            <div class="info-carro">
+                <h1 class="xmod">Model X</h1> <!-- TITULO -->
+                <p class="sub-titulo xmod">Parcelar a partir de 499 dólares</p>
+            </div>
+        </li>
+    </ul>
+    <!-- Formulário -->
+    <div id="forms">
+        <button onclick="hide()">Fechar</button>
+        <h1 id="title">DevClub Forms</h1>
+        <p id="description">Please fill out this form with the required information</p>
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+            <fieldset>
+                <label id="name-label" for="name">Enter Your Name:
+                    <input id="name" name="name" type="text" required placeholder="Joseph Kahn" />
+                </label>
+                <label id="text-label" for="sibren">How many hours do you have per day:
+                    <input id="nome" type="text" name="sobren" placeholder="Sobrenome" />
+                </label>
+                <label id="email-label" for="email">Enter Your Email:
+                    <input id="email" name="email" type="email" required placeholder="mail@email.com" />
+                </label>
+                <label for="referrer">Which model?
+                    <select id="dropdown" name="learn">
+                        <option value="">(select one)</option>
+                        <option value="1">Model Y</option>
+                        <option value="2">Model 3</option>
+                        <option value="3">Model X</option>
+                    </select>
+                </label>
+                <button type="submit" id="submit" class="submit-button" onclick="hide()">
+                    Submit
+                </button>
+        </form>
+    </div>
+</body>
+<script src="./Scrips.js"></script>
+</html>
