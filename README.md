@@ -1,5 +1,5 @@
 # Tesla-dev-club
-Primeiro Projeto com JavaScript
+Primeiro Projeto com JavaScript com "function" básica.
 
 *Projeto com o intuito de estudo, sem fins lucrativos* 
 
